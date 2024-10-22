@@ -1,0 +1,225 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Utilities */
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header{
+  background-color: #FE6900;
+
+}
+
+.container{
+  max-width: 1100px;
+  min-height: 60px;
+}
+
+img {
+  width: 100%;
+}
+
+.card{
+  position: relative;
+  max-width: 350px;
+  margin: 0 0;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.font{
+  font-size: 0.9rem;
+}
+
+.red-text{
+  color: red;
+}
+
+.lt-text{
+  text-decoration: line-through;
+}
+
+
+/* /Utilities */
+
+/* Header*/
+
+header .container{
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container img{
+  max-width: 100px;
+  max-height: 25px;
+}
+
+header .container a{
+  min-height: 60px;
+  max-width: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+/*/Header*/
+
+
+/*Main*/
+
+main .container{
+  margin: 40px auto;
+}
+
+main .container.d-flex{
+  justify-content: space-between;
+}
+
+.discount {
+  color: white;
+  background-color: red;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 95px;
+  left: 0;
+}
+
+.Sustainability{
+  color: white;
+  background-color: #007801;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 95px;
+  left: 50px;
+}
+
+.Sustainability.no-disc{
+  color: white;
+  background-color: #007801;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 95px;
+  left: 0;
+}
+
+.hearts{
+  background-color: white;
+  padding: 5px 10px;
+  font-size: 1.9rem;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.hearts:hover{
+  color: red;
+}
+
+.fit{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.guess{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.pastello{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.unisex{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.deluxe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.esprit{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.card:hover .fit{
+  display: block;
+}
+
+.card:hover .guess{
+  display: block;
+}
+
+.card:hover .pastello{
+  display: block;
+}
+
+.card:hover .unisex{
+  display: block;
+}
+
+.card:hover .deluxe{
+  display: block;
+}
+
+.card:hover .esprit{
+  display: block;
+}
+/*/Main*/
+
+/*Footer*/
+
+footer{
+  background-color: #1A1A1A;
+  color: white;
+  padding: 20px 0;
+}
+
+footer ul li{
+  list-style: none;
+  font-size: 0.8rem;
+  padding: 10px 0;
+}
+
+footer ul p{
+  font-size: 1.3rem;
+  padding-bottom: 5px;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+/*/footer*/
