@@ -7,6 +7,7 @@
 
 body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 100px;
 }
 
 /* Utilities */
@@ -21,12 +22,10 @@ body{
 
 header{
   background-color: #FE6900;
-
 }
 
 .container{
   max-width: 1100px;
-  min-height: 60px;
 }
 
 img {
@@ -35,7 +34,7 @@ img {
 
 .card{
   position: relative;
-  max-width: 350px;
+  width: 350px;
   margin: 0 0;
   cursor: pointer;
   margin-bottom: 40px;
@@ -58,21 +57,40 @@ img {
 
 /* Header*/
 
-header .container{
-  align-items: center;
-  justify-content: space-between;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 header .container img{
   max-width: 100px;
-  max-height: 25px;
+  margin-bottom: 0;
+  padding: 25px 0;
+}
+
+header .container #logo{
+  display: flex;
+  align-items: center;
 }
 
 header .container a{
-  min-height: 60px;
   max-width: 100%;
   text-decoration: none;
   color: black;
+
+}
+
+header .card.gen{
+  text-align: left;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+header .card.nav{
+  text-align: right;
+  margin-bottom: 0;
 }
 
 /*/Header*/
@@ -129,6 +147,10 @@ main .container.d-flex{
 
 .hearts:hover{
   color: red;
+}
+
+main .card span{
+  z-index: 1;
 }
 
 .fit{
@@ -220,6 +242,11 @@ footer ul p{
 footer a{
   text-decoration: none;
   color: white;
+}
+
+footer #list{
+  text-align: right;
+  margin-bottom: 25px;
 }
 
 /*/footer*/
